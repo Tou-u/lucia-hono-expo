@@ -1,0 +1,22 @@
+name = "my-app"
+compatibility_date = "2023-12-01"
+
+[vars]
+EXPO_REDIRECT_URL = "lucia-expo://login"
+GITHUB_CLIENT_ID = ""
+GITHUB_CLIENT_SECRET = ""
+DISCORD_CLIENT_ID = ""
+DISCORD_CLIENT_SECRET = ""
+DISCORD_REDIRECT_URI = "https://YOUR-WORKER.workers.dev/auth/login/discord/callback"
+GOOGLE_CLIENT_ID = ""
+GOOGLE_CLIENT_SECRET = ""
+GOOGLE_REDIRECT_URI = "https://YOUR-WORKER.workers.dev/auth/login/google/callback"
+
+[triggers]
+crons = ["0 0 * * *"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "your-db-name"
+database_id = "your-db-id"
+migrations_dir = "drizzle/migrations"
